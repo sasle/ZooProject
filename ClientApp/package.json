@@ -1,0 +1,39 @@
+{
+  "name": "zooproject",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.21.1",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-router-dom": "^5.1.2",
+    "styled-components": "^5.2.1",
+    "react-scripts": "^3.4.1",
+    "rimraf": "^2.6.2"
+  },
+  "devDependencies": {
+    "eslint-config-react-app": "^5.2.0"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "scripts": {
+    "start": "rimraf ./build && react-scripts --max_old_space_size=32768 start",
+    "build": "env CI=false react-scripts --max_old_space_size=32768 build",
+    "test": "cross-env CI=true react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "lint": "eslint ./src/"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
