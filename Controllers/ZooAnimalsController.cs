@@ -1,28 +1,25 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ZooProject.Models;
+using ZooProject.Services;
 
 namespace ZooProject.Controllers
 {
-    [ApiController]
-    [Route("[controller]")]
-    public class ZooAnimalsController : ControllerBase
+  [ApiController]
+  [Route("animals")]
+  public class ZooAnimalsController : ControllerBase
+  {
+    private readonly ZooAnimalsService _zooAnimalsService;
+
+    public ZooAnimalsController(ZooAnimalsService zooAnimalsService)
     {
-        private static readonly string[] Summaries = new[]
-        {
-        "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-    };
-
-        private readonly ILogger<ZooAnimalsController> _logger;
-
-        public ZooAnimalsController(ILogger<ZooAnimalsController> logger)
-        {
-            _logger = logger;
-        }
-
-        [HttpGet]
-        public IEnumerable<ZooAnimal> Get()
-        {
-            return null;
-        }
+      _zooAnimalsService = zooAnimalsService;
     }
+
+    [HttpGet]
+    public IEnumerable<ZooAnimal> Get()
+    {
+      IEnumerable<ZooAnimal> animals = _zooAnimalsService.Get();
+      return animals;
+    }
+  }
 }
