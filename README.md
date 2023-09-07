@@ -1,3 +1,6 @@
+# ABOUT
+Simple project following the rules set in the PDF, with a integration between front (React) and backend (.NET MVC) and using dependecy injection alongside other best practices on both.<br/>The main theme of the project is exhibiting zoo animals and also more info about them (plus other features requested in the email).
+
 # DISCLAIMER
 The reason I have developed in 2 accounts (sasle and asantos-integration) is because of a network issue in my personal computer with blocked me from running npm scripts and installing some modules. For this reason, I had to continue part of the development in my current company's working machine, which is logged in as asantos-integration.
 
