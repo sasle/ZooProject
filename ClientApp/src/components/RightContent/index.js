@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import {
   Container,
   Image,
-  Button,
   ImgContainer,
   SelectorContainer,
   Selector,
@@ -12,6 +11,9 @@ import Elephant from "../../assets/images/elephant.jpg";
 import Giraffe from "../../assets/images/giraffe.jpg";
 import Lion from "../../assets/images/lion.jpg";
 import Shark from "../../assets/images/shark.jpg";
+import { IconButton } from "@mui/material";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 export default function ImageCarousel() {
   const images = [
@@ -73,9 +75,13 @@ export default function ImageCarousel() {
   return (
     <Container>
       <ImgContainer>
-        <Button onClick={handlePrevClick}>Prev</Button>
+        <IconButton onClick={handlePrevClick}>
+          <ArrowBackIcon />
+        </IconButton>
         <Image src={images[currentIndex].url} alt={images[currentIndex].name} />
-        <Button onClick={handleNextClick}>Next</Button>
+        <IconButton onClick={handleNextClick}>
+          <ArrowForwardIcon />
+        </IconButton>
       </ImgContainer>
       <ImageSelector />
       <p>{images[currentIndex].name}</p>

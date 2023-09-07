@@ -15,6 +15,10 @@ export const ImgContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  button {
+    margin: 0 8px;
+  }
 `;
 
 export const Image = styled.img`
