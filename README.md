@@ -4,6 +4,9 @@ Simple project following the rules set in the PDF, with a integration between fr
 # DISCLAIMER
 The reason I have developed in 2 accounts (sasle and asantos-integration) is because of a network issue in my personal computer which blocked me from running npm scripts and installing some modules. For this reason, I had to continue part of the development in my current company's working machine, which is logged in as asantos-integration.
 
+# DISCLAIMER 2
+If you attempt to run npm install inside the ClientApp, please make sure you do so by using the --force or --legacy-peer-deps tags after.
+
 # USAGE GUIDE
 To run this project, please follow these steps:
 1) Clone the project;
