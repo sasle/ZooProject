@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Button } from "@mui/material";
 import { Container, Position } from "./styles";
 
 export default function LeftContent() {

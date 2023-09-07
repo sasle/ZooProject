@@ -2,6 +2,16 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  place-content: center;
+  border-left: 1px solid #dedede;
+`;
+
+export const ImgContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,4 +37,19 @@ export const Button = styled.button`
   &:hover {
     background-color: #005fa3;
   }
+`;
+
+export const SelectorContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+`;
+
+export const Selector = styled.div`
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: ${(props) => (props.active ? "#333" : "#ccc")};
+  margin: 0 8px;
+  cursor: pointer;
 `;
