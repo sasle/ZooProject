@@ -12,6 +12,7 @@ using Newtonsoft;
 using Newtonsoft.Json;
 using System.Text.Json.Serialization;
 using System;
+using ZooProject.Services;
 
 namespace ZooProject
 {
@@ -48,7 +49,7 @@ namespace ZooProject
 
 
       // Dependecy injection
-      //services.AddTransient<EvaluationSeniorMenteeService, EvaluationSeniorMenteeService>();
+      services.AddTransient<ZooAnimalsService>();
     }
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

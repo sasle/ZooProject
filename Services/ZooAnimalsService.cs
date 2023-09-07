@@ -2,19 +2,20 @@
 
 namespace ZooProject.Services
 {
-  public interface IZooAnimalsService { IEnumerable<ZooAnimal> Get(); }
+  public interface IZooAnimalsService { List<ZooAnimal> Get(); }
 
   public class ZooAnimalsService : IZooAnimalsService
   {
-    private static readonly List<ZooAnimal> animals = new();
-
-    public IEnumerable<ZooAnimal> Get()
+    public List<ZooAnimal> Get()
     {
-      animals.Add(new ZooAnimal { ID = 1, Name = "Tiger" });
-      animals.Add(new ZooAnimal { ID = 2, Name = "Lion" });
-      animals.Add(new ZooAnimal { ID = 3, Name = "Bear" });
-      animals.Add(new ZooAnimal { ID = 4, Name = "Elephant" });
-      animals.Add(new ZooAnimal { ID = 5, Name = "Shark" });
+      List<ZooAnimal> animals = new()
+      {
+        new ZooAnimal { ID = 1, Name = "Lion" },
+        new ZooAnimal { ID = 2, Name = "Bear" },
+        new ZooAnimal { ID = 3, Name = "Shark" },
+        new ZooAnimal { ID = 4, Name = "Elephant" },
+        new ZooAnimal { ID = 5, Name = "Giraffe" },
+      };
       return animals;
     }
   }
