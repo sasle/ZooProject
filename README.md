@@ -1,12 +1,9 @@
+# ⚠️ IMPORTANT DISCLAIMER ⚠️
+If you are having trouble running the app, try **downgrading node to version 16.17.0** and make sure the **required ports are clear for running the localhost**.<br/>
+If you attempt to run npm install inside the ClientApp, please make sure you do so by using the **--force and/or --legacy-peer-deps** tags after.<br/>
+
 # ABOUT
 Simple project following the rules set in the PDF, with a integration between front (React) and backend (.NET MVC) and using dependecy injection alongside other best practices on both.<br/>The main theme of the project is exhibiting zoo animals and also more info about them (plus other features requested in the email).
-
-# DISCLAIMER
-If you are having trouble running the app, try **downgrading node to version 16.17.0** and make sure the **required ports are clear for running the localhost**.<br/>
-If you attempt to run npm install inside the ClientApp, please make sure you do so by using the **--force or --legacy-peer-deps** tags after. 
-
-# DISCLAIMER 2
-The reason I have developed in 2 accounts (sasle and asantos-integration) is because of a network issue in my personal computer which blocked me from running npm scripts and installing some modules. For this reason, I had to continue part of the development in my current company's working machine, which is logged in as asantos-integration.
 
 # USAGE GUIDE
 To run this project, please follow these steps:
